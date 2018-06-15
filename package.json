@@ -1,0 +1,23 @@
+{
+  "name": "KyleJennings",
+  "version": "1.0.0",
+  "description": "1. [Email](kyleojennings@gmail.com)\r 2. [Github](https://github.com/kojhcd)\r 3. [Facebook](https://www.facebook.com/kyle.jennings.56829)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kojhcd/Savvy-Portfolio-2018.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kojhcd/Savvy-Portfolio-2018/issues"
+  },
+  "homepage": "https://github.com/kojhcd/Savvy-Portfolio-2018#readme",
+  "devDependencies": {
+    "eslint": "^4.19.1"
+  }
+}
