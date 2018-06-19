@@ -1,7 +1,70 @@
-body {
-    background-color: rgba(45, 166, 196, 0.11)
-    }
-h1 {
-    color:rgba(17, 17, 82, 0.295) "; 
+
+/* * {
+    border: 1px solid  rgb(155, 248, 248); 
+} */
+
+p, h1, h2, h3, li, ul { 
+    color: rgb(155, 248, 248); 
+    font-family: fantasy; 
+}
+#navigation {
+                    background-color: darkslategrey; 
+    padding: 10px; 
     
+
+}
+
+#header {
+    background-color: darkslategrey; 
+    padding: 10px; 
+ 
+
+}
+
+#content {
+    background-color: darkslategrey; 
+    padding: 10px; 
+   
+
+
+}
+
+#footer {
+    background-color: darkslategrey; 
+    padding: 10px; 
+}
+
+
+body {
+      }
+
+h1 {
+    color:rgba(213, 213, 233, 0.959) "; 
+}
+
+#navigation> ul {
+    padding: 20px; 
+    margin:0; 
+    list-style: none; 
+}
+
+#navigation > ul > li {
+    margin-right: 10px; 
+    display: inline; 
+    font-size: 30px; 
+}
+
+ul > a {
+    padding: 10px; 
+}
+a:visited {
+    color: 	rgb(39,197,171) 
+}
+
+a:hover {
+    color: blue; 
+}
+
+#bizcard {
+    margin: 0 30% 0 30%;  
 }
