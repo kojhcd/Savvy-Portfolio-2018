@@ -8,10 +8,10 @@ p, h1, h2, h3, li, ul {
     font-family: fantasy; 
 }
 #navigation {
-                    background-color: darkslategrey; 
-    padding: 10px; 
-    
-
+                    background-color: rgba(24, 24, 141, 0.322); 
+                     padding: 10px; 
+                     width: 100vw; 
+                     position: fixed;  
 }
 
 #header {
@@ -24,9 +24,6 @@ p, h1, h2, h3, li, ul {
 #content {
     background-color: darkslategrey; 
     padding: 10px; 
-   
-
-
 }
 
 #footer {
@@ -34,12 +31,14 @@ p, h1, h2, h3, li, ul {
     padding: 10px; 
 }
 
-
-body {
-      }
-
 h1 {
     color:rgba(213, 213, 233, 0.959) "; 
+}
+
+.container {
+    width: 100%; 
+    max-width: 760px;
+    margin: 0 auto 0 auto; 
 }
 
 #navigation> ul {
@@ -66,5 +65,5 @@ a:hover {
 }
 
 #bizcard {
-    margin: 0 30% 0 30%;  
+  
 }
