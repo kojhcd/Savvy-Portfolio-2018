@@ -22,9 +22,8 @@ h1 {
     color: rgb(155, 248, 248); 
 }
 .navigation {
-                    background-color: rgba(24, 24, 141, 0.322);   
-                                          
-}
+                    background-color: rgba(24, 24, 141, 0.322);                                           
+                }
 
 .header {
     background-color: darkslategrey; 
@@ -59,8 +58,11 @@ h1 {
     
 }
 
+ .navigation li {
+                       position: relative; 
+                    }
 
-.navigation> ul {
+.navigation > ul {
     display: flex; 
     align-items: center; 
     flex-direction: row; 
@@ -108,3 +110,23 @@ a:hover {
     color: rgb(167, 201, 247); 
     font-size: 6em; 
 }
+
+@media (min-width: 612px) {
+    body {
+        grid-template-rows: min-content auto min-content; 
+        grid-template-columns: 150px auto; 
+        grid-template-areas:
+            "navigation header"
+            "navigation content"
+            "navigation footer"; 
+             }
+    .navigation {
+                        grid-area: navigation; 
+                    }
+
+    .navigation > ul {
+                             flex-direction: column; 
+                             height: 50vh; 
+                             }
+                                        }
+  }
