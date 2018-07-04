@@ -19,5 +19,8 @@
   "homepage": "https://github.com/kojhcd/Savvy-Portfolio-2018#readme",
   "devDependencies": {
     "eslint": "^4.19.1"
+  },
+  "dependencies": {
+    "src": "^1.1.2"
   }
 }
