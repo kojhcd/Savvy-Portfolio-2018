@@ -35,16 +35,10 @@ document
     .innerHTML = `
     ${Navigation}
     ${intitialHTML}
-    ${Header}
+    ${Header()}
     ${Content}
     ${Footer}
     `;
-
-
-
-
-
-
 
 
 /*
