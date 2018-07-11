@@ -3,63 +3,58 @@ import Header from '../src/Header';
 import Content from '../src/Content';
 import Footer from '../src/Footer';
 
-
-// var greeting = document.querySelector('.greeting');
-
-// var greetUser = function greetUser(){
-//     var firstName = prompt('What is your first name?');
-//     var lastName = prompt('What is your last name');
-
-
-//     if(firstName && lastName){
-//         greeting.innerHTML =
-//           `
-//             <div>
-//                     <h3>Welcome to the Zone! </h3>
-//                        <h1> ${firstName} ${lastName}  </h1>
-//              </div>
-//          `;
-//     }
-//     else{
-//         greetUser();
-//     }
-// };
-
-// greetUser();
-
-
-var intitialHTML = document.body.innerHTML;
-
-document
-    .body
-    .innerHTML = `
-    ${Navigation}
-    ${intitialHTML}
-    ${Header()}
-    ${Content}
-    ${Footer}
-    `;
-
-
-/*
-
-  if(userName){
-        greeting.innerHTML = ' <div><h3>Welcome to the Zone! </h3> <h1> ' + userName + '  </h1> </div> ';
-    }
-    else{
-        greetUser();
-    }
+var Home = {
+    'title': ' Kyle Jenning\'s Project'
 };
 
-------------------------------------------------------------------------------
-    if(firstName && lastName){
-        greeting.innerHTML =
-         ' <div><h3>Welcome to the Zone! </h3> <h1> ' + firstName + '' +  lastName + '  </h1> </div> ';
-    }
-    else{
-        greetUser();
-    }
-};
+var root = document.querySelector('#root');
+
+function render(state){
+    var greeting;
+    var input;
+    var links;
+
+    root.innerHTML =
+                                `
+                                        ${Navigation}
+                                        ${Header(state)}
+                                        ${Content}
+                                        ${Footer}
+                                `;
+    
+    greeting = document.querySelector('.greeting');
+    input = document.querySelector('.header input');
+
+    input.addEventListener(
+        'keyup',
+        (event) => greeting.innerHTML =
+    `  <div> 
+            <h1> welcome to my page </h1> 
+              <h4> ${event.target.value} </h4> 
+        </div>  
+    `
+    );
 
 
-*/
+    input.addEventListener(
+        'keyup',
+        (event) => greeting.innerHTML =
+    ` <div> 
+            <h1> welcome to my page </h1> 
+              <h4> ${event.target.value} </h4> 
+     </div>  
+    `
+    );
+
+    links = document.querySelectorAll('.Navigation a');
+
+    links[0].addEventListener(
+        'click',
+        (event) => {
+            event.prevent.default();
+            console.log('first link clicked');
+        }
+    );
+}
+
+render(Home);
