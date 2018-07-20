@@ -1,11 +1,23 @@
-export default `
-<div class="footer">
-    <h1>References</h1>
-    <p>I always quote my sources = D </p>
-
-    <a href="mailto:kyleojennings@gmail.com"><i class="fab fa-envelope"></i> </a>
-    <a href="https://github.com/kojhcd"> <i class="fab fa-github"></i>  </a>
-    <a href="https://www.facebook.com/kyle.jennings.56829"><i class="fab fa-facebook-square"></i></a>
-    <i class="fab fa-twitter"></i> --> 
-</div>
+export default
+`
+  <div id="footer">
+    <ul class="container">
+      <li id="boldlinky">
+        <a href="https://twitter.com/nalexpearson">
+          <i class="fab fa-twitter"></i>
+          Twitter
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/nalexpear">
+          <i class="fab fa-github"></i>
+          GitHub
+        </a>
+      </li>
+      <li>
+        <i class="fab fa-facebook"></i>
+        Facebook (just kidding)
+      </li>
+    </ul>
+  </div>
 `;
