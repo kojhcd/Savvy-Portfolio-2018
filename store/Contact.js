@@ -5,4 +5,4 @@ export default {
         'Projects'
     ],
     'title': 'Welcome to my Contact'
-  };
+};

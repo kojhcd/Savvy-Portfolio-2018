@@ -4,5 +4,6 @@ export default {
         'Contact',
         'Projects'
     ],
+    'body': 'Blog',
     'title': 'Welcome to my Blog'
-  };
+};
