@@ -1,132 +1,180 @@
+Skip to content
+Features
+Business
+Explore
+Marketplace
+Pricing
 
-/* * {
-    border: 1px solid  rgb(155, 248, 248); 
-} */
+Search
 
-root{
-    display: grid; 
-    grid-template-areas: 
-    "navigation"
-    "header" 
-    "content"
-    "footer"; 
-}
+Sign in or Sign up
+3 1 4 NAlexPear/savvy-portfolio-alex-pearson
+ Code  Issues 0  Pull requests 0  Projects 0  Insights
+Join GitHub today
+GitHub is home to over 28 million developers working together to host and review code, manage projects, and build software together.
 
-p, h2, h3, li, ul { 
-    color: rgb(155, 248, 248); 
-    font-family: fantasy; 
-}
-
+savvy-portfolio-alex-pearson/css/style.css
+45bb870  21 days ago
+@NAlexPear NAlexPear ✨ Finish parcel-related exercises and root refactor
+     
+161 lines (130 sloc)  2.08 KB
 h1 {
-    font-family: 'galada'; 
-    color: rgb(155, 248, 248); 
-}
-.navigation {
-                    background-color: rgba(24, 24, 141, 0.322);                                           
-                }
-
-.header {
-    background-color: darkslategrey; 
-    padding: 10px; 
- 
-
+  font-family: 'Markazi Text', serif;
+  margin-top: 0;
 }
 
-.content {
-    background-color: darkslategrey; 
-    padding: 10px; 
+h3 {
+  font-style: italic;
 }
 
-.footer {
-    background-color: darkslategrey; 
-    width: 100%; 
-    max-width: 760px;
-    margin: 0 auto 0 auto; 
-    padding: 10px; 
-}
-
-h1 {
-    color:rgba(213, 213, 233, 0.959) "; 
-}
-
-
-.container {
-    width: 100%; 
-    max-width: 760px;
-    margin: 0 auto 0 auto; 
-    padding: 10px; 
-    
-}
-
- .navigation li {
-                       position: relative; 
-                    }
-
-.navigation > ul {
-    display: flex; 
-    align-items: center; 
-    flex-direction: row; 
-    justify-content: space-around; 
-    list-style: none; 
-}
-
-.navigation > ul > li {
-    margin-right: 10px; 
-    font-size: 30px; 
-}
-
-ul > a {
-    padding: 10px; 
-}
-a:visited {
-    color: 	rgb(39,197,171) 
-}
-
-a:hover {
-    color: blue; 
-}
-
-#bizcard {
-    width: 100%; 
-  
+img {
+  width: 100%;
+  max-width: 300px;
 }
 
 .fa-github {
-    color: rgb(167, 201, 247); 
-    font-size:  6em; 
-}
-
-.fa-envelope {
-    color: rgb(167, 201, 247); 
-    font-size: 6em; 
-}
-
-.fa-facebook-square {
-    color: rgb(167, 201, 247); 
-    font-size: 6em; 
+  color: black;
 }
 
 .fa-twitter {
-    color: rgb(167, 201, 247); 
-    font-size: 6em; 
+  color: white;
+}
+
+.fa-facebook {
+  color: #3b5998;
+}
+
+#root {
+  display: grid;
+  grid-template-rows: min-content min-content auto min-content;
+  grid-template-areas:
+    "navigation"
+    "header"
+    "content"
+    "footer";
+  min-height: 100vh;
+}
+
+#navigation {
+  background-color: rgb(39, 83, 202);
+  position: sticky;
+  top: 0;
+}
+
+#navigation > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+}
+
+#navigation .container {
+  margin: 0 auto;
+}
+
+#navigation li {
+  position: relative;
+}
+
+#navigation a + ul {
+  background-color: hotpink;
+  display: none;
+  left: -15px;
+  position: absolute;
+  top: 18px;
+}
+
+#navigation a:hover + ul,
+#navigation a + ul:hover {
+  display: flex;
+  flex-direction: column;
+}
+
+#content p + ul {
+  background-color: rgb(42, 102, 190);
+}
+
+#content li {
+  background-color: chartreuse;
+}
+
+#content li:first-child {
+  background-color: aqua;
+}
+
+#content li:nth-child(3n){
+  background-color: burlywood;
+}
+
+#content li:last-child {
+  background-color: purple;
+}
+
+#content li:nth-child(2){
+  background-color: red;
+}
+
+#header {
+  padding: 10px;
+  background-color: lightblue;
+}
+
+#content {
+  padding: 10px;
+  background-color: rgb(177, 144, 238);
+}
+
+#footer {
+  padding: 10px;
+  background-color: rgb(135, 122, 255);
+}
+
+#footer > ul {
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+}
+
+#footer > ul > li {
+  margin: 0 10px 0 0;
+  display: inline;
+}
+
+#footer .container {
+  margin: 0 auto;
+}
+
+#footer a {
+  text-decoration: none;
+}
+
+#codeperson {
+  color: red;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 760px;
 }
 
 @media (min-width: 612px) {
-    body {
-        grid-template-rows: min-content auto min-content; 
-        grid-template-columns: 150px auto; 
-        grid-template-areas:
-            "navigation header"
-            "navigation content"
-            "navigation footer"; 
-             }
-    .navigation {
-                        grid-area: navigation; 
-                    }
-
-    .navigation > ul {
-                             flex-direction: column; 
-                             height: 50vh; 
-                             }
-                                        }
+  #root {
+    grid-template-columns: 150px auto;
+    grid-template-rows: min-content auto min-content;
+    grid-template-areas:
+      "navigation header"
+      "navigation content"
+      "navigation footer";
   }
+
+  #navigation {
+    grid-area: navigation;
+  }
+
+  #navigation > ul {
+    flex-direction: column;
+    height: 50vh;
+  }
+}
